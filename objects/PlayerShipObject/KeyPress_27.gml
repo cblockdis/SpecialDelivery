@@ -1,0 +1,1 @@
+FadeTransition(TRANS_MODE.GOTO, PlayerShip, 700, 510);	
