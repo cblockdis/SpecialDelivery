@@ -1,5 +1,4 @@
 {
-  "name": "blueQuarry",
   "spriteId": {
     "name": "sCol",
     "path": "sprites/sCol/sCol.yy",
@@ -49,6 +48,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "blueQuarry",
   "tags": [],
   "resourceType": "GMTileSet",
 }
