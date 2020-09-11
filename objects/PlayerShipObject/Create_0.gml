@@ -12,4 +12,3 @@ isRotating = false;
 pointDirection = 0;
 xTo = x + 100;
 yTo = y;
-
