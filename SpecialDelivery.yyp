@@ -9,6 +9,7 @@
     {"id":{"name":"InitObject","path":"objects/InitObject/InitObject.yy",},"order":0,},
     {"id":{"name":"ChangeRoomsObject","path":"objects/ChangeRoomsObject/ChangeRoomsObject.yy",},"order":2,},
     {"id":{"name":"CameraMain","path":"objects/CameraMain/CameraMain.yy",},"order":0,},
+    {"id":{"name":"World1B","path":"rooms/World1B/World1B.yy",},"order":1,},
     {"id":{"name":"DestinationSprite","path":"sprites/DestinationSprite/DestinationSprite.yy",},"order":19,},
     {"id":{"name":"FadeTransition","path":"scripts/FadeTransition/FadeTransition.yy",},"order":2,},
     {"id":{"name":"TravelGuide","path":"rooms/TravelGuide/TravelGuide.yy",},"order":2,},
@@ -47,6 +48,7 @@
     {"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},
     {"name":"TravelGuide","path":"rooms/TravelGuide/TravelGuide.yy",},
     {"name":"World1Start","path":"rooms/World1Start/World1Start.yy",},
+    {"name":"World1B","path":"rooms/World1B/World1B.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
