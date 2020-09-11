@@ -1,6 +1,7 @@
 /// @description Initialize player ship object
 #macro MOVE_SPEED 2.5
 
+hascontrol = true;
 speedYShift = 0;
 speedXShift = 0;
 xDirection = 0;
