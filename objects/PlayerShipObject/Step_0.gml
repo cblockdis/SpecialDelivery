@@ -41,10 +41,10 @@ if (hascontrol)
 	}
 	
 	var magnitude = sqrt(sqr(current_movement_x) + sqr(current_movement_y))
-	if(magnitude > 5)
+	if(magnitude > MAX_MOMENTUM)
 	{
-		current_movement_x = (current_movement_x / magnitude) * 5;
-		current_movement_y = (current_movement_y / magnitude) * 5;
+		current_movement_x = (current_movement_x / magnitude) * MAX_MOMENTUM;
+		current_movement_y = (current_movement_y / magnitude) * MAX_MOMENTUM;
 	}
 
 	x += current_movement_x;
