@@ -9,10 +9,10 @@ if (hascontrol)
 	var movDirection = point_direction(0,0,xmove,ymove);
 	xmove = xmove * dcos(movDirection) * xtravel;
 	ymove = ymove * -dsin(movDirection) * ytravel;
-	var spin = 0.1;
-	var diff = angle_difference(image_angle, movDirection)
+	var spin = 0.05;
 	if(xtravel != 0 || ytravel != 0)
 	{
+		var diff = angle_difference(image_angle, movDirection)
 	    if(abs(diff) < spin)
 	    {
 	        image_angle = movDirection
@@ -21,10 +21,34 @@ if (hascontrol)
 	    {
 	        image_angle -= (diff * spin)
 	    }
+		current_movement_x += xmove;
+		current_movement_y += ymove;
+	}
+	else
+	{
+		movDirection = point_direction(0, 0, current_movement_x, current_movement_y)
+		var diff = angle_difference(image_angle, movDirection)
+	    if(abs(diff) < spin)
+	    {
+	        image_angle = movDirection
+	    }
+	    else
+	    {
+	        image_angle -= (diff * spin)
+	    }
+		current_movement_x = current_movement_x * 0.99;
+		current_movement_y = current_movement_y * 0.99;
+	}
+	
+	var magnitude = sqrt(sqr(current_movement_x) + sqr(current_movement_y))
+	if(magnitude > 5)
+	{
+		current_movement_x = (current_movement_x / magnitude) * 5;
+		current_movement_y = (current_movement_y / magnitude) * 5;
 	}
 
-	x += xmove;
-	y += ymove;
+	x += current_movement_x;
+	y += current_movement_y;
 }
 
 
