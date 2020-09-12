@@ -36,8 +36,8 @@ if (hascontrol)
 	    {
 	        image_angle -= (diff * spin)
 	    }
-		current_movement_x = current_movement_x * 0.99;
-		current_movement_y = current_movement_y * 0.99;
+		current_movement_x = current_movement_x * 0.95;
+		current_movement_y = current_movement_y * 0.95;
 	}
 	
 	var magnitude = sqrt(sqr(current_movement_x) + sqr(current_movement_y))
