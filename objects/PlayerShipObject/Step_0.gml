@@ -9,7 +9,7 @@ if (hascontrol)
 	var movDirection = point_direction(0,0,xmove,ymove);
 	xmove = xmove * dcos(movDirection) * xtravel;
 	ymove = ymove * -dsin(movDirection) * ytravel;
-	var spin = 0.05;
+	var spin = 0.025;
 	if(xtravel != 0 || ytravel != 0)
 	{
 		var diff = angle_difference(image_angle, movDirection)

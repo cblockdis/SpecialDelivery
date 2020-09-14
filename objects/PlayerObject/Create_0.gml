@@ -1,5 +1,5 @@
 /// @description Player variables
-#macro SPEED_WALK 3.5
+#macro SPEED_WALK 2.8
 #macro SPEED_GRAVITY 0.3
 #macro SPEED_JUMP 8
 
